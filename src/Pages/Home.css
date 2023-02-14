@@ -1,0 +1,172 @@
+body {
+  height: 100vh;
+}
+
+.body__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body__title {
+  font-size: 57px;
+  max-width: 730px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slide-in 1200ms 300ms ease backwards;
+}
+
+.body__sub-title {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #0a1f44;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  animation: slide-in 800ms 1500ms ease backwards;
+}
+
+.search__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  animation: slide-in 800ms 1800ms ease backwards;
+  margin-bottom: 24px;
+}
+
+.search__btn {
+  width: 150px;
+  background-color: #6030b1;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 7px 7px 14px rgb(134 93 204 / 30%);
+  cursor: pointer;
+  padding: 12px 0;
+  transition: 300ms ease;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.search__btn:hover {
+  background-color: #dd0f5e;
+}
+
+.searchbar__icon {
+  color: white;
+  width: 40px;
+}
+
+.search__input {
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+  font-size: 20px;
+  padding-left: 20px;
+  border-radius: 50px;
+  letter-spacing: 1.25px;
+  transition: all 300ms ease;
+  outline: none;
+}
+
+.search__bar {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  overflow: none;
+  border: none;
+}
+
+.img1--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  margin-top: 28px;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+/* 
+  
+  ANIMATIONS
+  
+  */
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 
+  
+  RESPONSIVE
+  
+  */
+
+@media (max-width: 768px) {
+  .body__title {
+    font-size: 42px;
+  }
+
+  .body__sub-title {
+    font-size: 28px;
+  }
+
+  .searchbar {
+    font-size: 16px;
+  }
+
+  .img1 {
+    height: 400px;
+    width: 400px;
+  }
+
+  .body__content {
+    display: block;
+    padding: 0 24px;
+  }
+
+  .searchbar {
+    margin-bottom: 36px;
+    height: 70px;
+    width: 100%;
+  }
+
+  .search__btn {
+    width: 100%;
+    margin-left: 0;
+    height: 70px;
+  }
+}
+
+@media (max-width: 550px) {
+  .body__title {
+    text-align: left;
+  }
+  .body__sub-title {
+    text-align: left;
+  }
+
+  .img1 {
+    display: none;
+  }
+}
