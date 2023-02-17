@@ -1,6 +1,5 @@
 html {
   width: 100%;
-  overflow-x: hidden;
 }
 
 .header {
@@ -218,28 +217,6 @@ html {
 
 #results {
   position: relative;
-}
-
-.blob1 {
-  position: absolute;
-  background-image: url(../Assets/blob1.svg);
-  right: -150px;
-  top: 0;
-  width: 300px;
-  height: 300px;
-  filter: opacity(0.5);
-  z-index: 1;
-}
-
-.blob2 {
-  position: absolute;
-  background-image: url(../Assets/blob2.svg);
-  left: -150px;
-  top: 250px;
-  width: 300px;
-  height: 300px;
-  filter: opacity(0.5);
-  z-index: 1;
 }
 
 .bar {

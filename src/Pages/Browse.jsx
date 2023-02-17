@@ -86,12 +86,6 @@ const Browse = () => {
         <div className="bar">
           <div className="bar__loading"></div>
         </div>
-        <div className="blob1">
-          <img src="./assets/blob1.svg" alt=""></img>
-        </div>
-        <div className="blob2">
-          <img src="./assets/blob2.svg" alt=""></img>
-        </div>
         <div className="row">
           <div className="movies__wrapper">
             <div className="search__results">
