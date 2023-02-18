@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../Assets/logo.svg";
+import logo from "../Assets/logo.png";
+import logoWhite from "../Assets/logo-white.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,9 +16,16 @@ const Navbar = ({ white }) => {
 
   return (
     <nav>
-      <figure className="nav__logo">
-        <img src={logo} className="nav__logo--img" alt="" />
-      </figure>
+      {white ? (
+        <figure className="nav__logo">
+          <img src={logoWhite} className="nav__logo--img " alt="" />
+        </figure>
+      ) : (
+        <figure className="nav__logo">
+          <img src={logo} className="nav__logo--img" alt="" />
+        </figure>
+      )}
+
       <div className="nav__links">
         {white ? (
           <div className="nav__links--wrapper">
